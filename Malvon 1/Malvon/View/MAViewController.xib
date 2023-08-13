@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MAViewController" customModule="Malvon" customModuleProvider="target">
+            <connections>
+                <outlet property="backwardButton" destination="ajN-hw-3h0" id="wxP-Sw-7J7"/>
+                <outlet property="forwardButton" destination="hYE-0m-BS6" id="k9A-kI-t6U"/>
+                <outlet property="progressBar" destination="8qh-5p-usx" id="ns9-hD-QJP"/>
+                <outlet property="refreshButton" destination="iVl-X1-V0a" id="i80-yp-DgV"/>
+                <outlet property="tabBar" destination="jcJ-wv-Ven" id="JeR-UJ-WAT"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="webViewFrame" destination="0gL-6f-Zod" id="E8a-71-Trj"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="630" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <progressIndicator hidden="YES" fixedFrame="YES" maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="8qh-5p-usx">
+                    <rect key="frame" x="0.0" y="393" width="630" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </progressIndicator>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-Wf-eXb">
+                    <rect key="frame" x="0.0" y="0.0" width="630" height="400"/>
+                    <subviews>
+                        <stackView distribution="fillProportionally" orientation="horizontal" alignment="centerY" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ob-5K-eYc">
+                            <rect key="frame" x="0.0" y="370" width="630" height="30"/>
+                            <subviews>
+                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="mu2-kL-3Gp">
+                                    <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="74" id="Dw6-iJ-Ghp"/>
+                                        <constraint firstAttribute="height" constant="30" id="r7i-OD-rJY"/>
+                                    </constraints>
+                                </customView>
+                                <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40B-ez-KBd">
+                                    <rect key="frame" x="74" y="0.0" width="75" height="30"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ajN-hw-3h0">
+                                            <rect key="frame" x="0.0" y="-1.5" width="25" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="gK9-dq-za2"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="arrow.backward" catalog="system" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="cjy-sJ-CV6">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="backWebView:" target="-1" id="irV-ce-C8F"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-0m-BS6">
+                                            <rect key="frame" x="25" y="-1.5" width="25" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="TUH-Vq-2dP"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="arrow.forward" catalog="system" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="TYf-R8-cCE">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="forwardWebView:" target="-1" id="qQD-p7-5DQ"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iVl-X1-V0a">
+                                            <rect key="frame" x="50" y="-2.5" width="25.5" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="I6I-mQ-zw9"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="arrow.clockwise" catalog="system" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="ejW-rt-eSA">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent">r</string>
+                                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="reloadWebView:" target="-1" id="LCR-9n-6Yn"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="cyk-Px-Oyd"/>
+                                    </constraints>
+                                    <visibilityPriorities>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                    </visibilityPriorities>
+                                    <customSpacing>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                    </customSpacing>
+                                </stackView>
+                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="jcJ-wv-Ven" customClass="MATabBar" customModule="Malvon" customModuleProvider="target">
+                                    <rect key="frame" x="149" y="0.0" width="481" height="30"/>
+                                </customView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="DCJ-JY-8vF"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="0gL-6f-Zod" customClass="MATabView" customModule="Malvon" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="630" height="370"/>
+                        </customView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ic9-Wf-eXb" secondAttribute="trailing" id="726-eB-LeC"/>
+                <constraint firstItem="ic9-Wf-eXb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Fj5-sq-CJx"/>
+                <constraint firstItem="ic9-Wf-eXb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Kwp-xZ-zBk"/>
+                <constraint firstAttribute="bottom" secondItem="ic9-Wf-eXb" secondAttribute="bottom" id="Pra-dR-weD"/>
+            </constraints>
+            <point key="canvasLocation" x="-270" y="111.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="15" height="12"/>
+        <image name="arrow.clockwise" catalog="system" width="14" height="16"/>
+        <image name="arrow.forward" catalog="system" width="15" height="12"/>
+    </resources>
+</document>

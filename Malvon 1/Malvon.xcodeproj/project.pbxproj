@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0BF79428EA6FE7003820DE /* MATabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BF79328EA6FE7003820DE /* MATabBarButton.swift */; };
+		CF1F3F4928D3E67F0073E1DE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1F3F4828D3E67F0073E1DE /* WebKit.framework */; };
+		CF1F3F4C28D3E80A0073E1DE /* MAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F3F4B28D3E80A0073E1DE /* MAWebView.swift */; };
+		CF1F3F4F28D3E9570073E1DE /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F3F4E28D3E9570073E1DE /* Shared.swift */; };
+		CF1F3F5428D3FA980073E1DE /* MATabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F3F5328D3FA980073E1DE /* MATabItem.swift */; };
+		CF1F3F5628D403700073E1DE /* MATabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1F3F5528D403700073E1DE /* MATabView.swift */; };
+		CF28960F28EA4FC0006A63C6 /* newtab.html in Resources */ = {isa = PBXBuildFile; fileRef = CF28960E28EA4FC0006A63C6 /* newtab.html */; };
+		CF527AE228EA586000A764DA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF527AE128EA586000A764DA /* Configuration.swift */; };
+		CF527AE628EA59A800A764DA /* MATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF527AE528EA59A800A764DA /* MATabBar.swift */; };
+		CF78EFA728D53F46004EACF1 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78EFA628D53F46004EACF1 /* Actions.swift */; };
+		CF9A8C4F28D3434D002096C9 /* MATabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9A8C4D28D3434D002096C9 /* MATabBarViewController.swift */; };
+		CF9A8C5028D3434D002096C9 /* MATabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9A8C4E28D3434D002096C9 /* MATabBarViewController.xib */; };
+		CFC4B48828D2925A008205DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4B48728D2925A008205DC /* AppDelegate.swift */; };
+		CFC4B48A28D2925A008205DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC4B48928D2925A008205DC /* Assets.xcassets */; };
+		CFC4B48D28D2925A008205DC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4B48B28D2925A008205DC /* MainMenu.xib */; };
+		CFC4B49628D292CB008205DC /* MAWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4B49428D292CB008205DC /* MAWindowController.swift */; };
+		CFC4B49728D292CB008205DC /* MAWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4B49528D292CB008205DC /* MAWindowController.xib */; };
+		CFC4B49E28D2A2A0008205DC /* MAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4B49C28D2A2A0008205DC /* MAViewController.swift */; };
+		CFC4B49F28D2A2A0008205DC /* MAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC4B49D28D2A2A0008205DC /* MAViewController.xib */; };
+		CFCC774C28D5610C00D4D6C6 /* MAViewController+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCC774B28D5610C00D4D6C6 /* MAViewController+WebView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF01CD5B28D2AF930061A712 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF01CD5D28D2AF930061A712 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF0BF79328EA6FE7003820DE /* MATabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabBarButton.swift; sourceTree = "<group>"; };
+		CF1F3F4828D3E67F0073E1DE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CF1F3F4B28D3E80A0073E1DE /* MAWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAWebView.swift; sourceTree = "<group>"; };
+		CF1F3F4E28D3E9570073E1DE /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		CF1F3F5328D3FA980073E1DE /* MATabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabItem.swift; sourceTree = "<group>"; };
+		CF1F3F5528D403700073E1DE /* MATabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabView.swift; sourceTree = "<group>"; };
+		CF28960C28EA4A28006A63C6 /* Issues.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Issues.md; sourceTree = "<group>"; };
+		CF28960E28EA4FC0006A63C6 /* newtab.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = newtab.html; sourceTree = "<group>"; };
+		CF527AE128EA586000A764DA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CF527AE528EA59A800A764DA /* MATabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabBar.swift; sourceTree = "<group>"; };
+		CF78EFA628D53F46004EACF1 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		CF9A8C4D28D3434D002096C9 /* MATabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabBarViewController.swift; sourceTree = "<group>"; };
+		CF9A8C4E28D3434D002096C9 /* MATabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MATabBarViewController.xib; sourceTree = "<group>"; };
+		CFC4B48428D2925A008205DC /* Malvon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Malvon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC4B48728D2925A008205DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFC4B48928D2925A008205DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFC4B48C28D2925A008205DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CFC4B48E28D2925A008205DC /* Malvon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Malvon.entitlements; sourceTree = "<group>"; };
+		CFC4B49428D292CB008205DC /* MAWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAWindowController.swift; sourceTree = "<group>"; };
+		CFC4B49528D292CB008205DC /* MAWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAWindowController.xib; sourceTree = "<group>"; };
+		CFC4B49C28D2A2A0008205DC /* MAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAViewController.swift; sourceTree = "<group>"; };
+		CFC4B49D28D2A2A0008205DC /* MAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAViewController.xib; sourceTree = "<group>"; };
+		CFCC774B28D5610C00D4D6C6 /* MAViewController+WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MAViewController+WebView.swift"; sourceTree = "<group>"; };
+		ED55C72928F0DED20024039E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC4B48128D2925A008205DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F3F4928D3E67F0073E1DE /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF09C05528D2AD9400832B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3F4828D3E67F0073E1DE /* WebKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1F3F4A28D3E7FA0073E1DE /* MAWebView */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3F4B28D3E80A0073E1DE /* MAWebView.swift */,
+			);
+			path = MAWebView;
+			sourceTree = "<group>";
+		};
+		CF1F3F4D28D3E9450073E1DE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3F4E28D3E9570073E1DE /* Shared.swift */,
+				CF78EFA628D53F46004EACF1 /* Actions.swift */,
+				CF527AE128EA586000A764DA /* Configuration.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CF1F3F5028D3EA600073E1DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4B49C28D2A2A0008205DC /* MAViewController.swift */,
+				CFC4B49428D292CB008205DC /* MAWindowController.swift */,
+				CFCC774B28D5610C00D4D6C6 /* MAViewController+WebView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF1F3F5128D3EA720073E1DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4B49528D292CB008205DC /* MAWindowController.xib */,
+				CFC4B49D28D2A2A0008205DC /* MAViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF1F3F5228D3FA870073E1DE /* MATab */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3F5528D403700073E1DE /* MATabView.swift */,
+				CF1F3F5328D3FA980073E1DE /* MATabItem.swift */,
+				CF527AE428EA598600A764DA /* Horizontal */,
+				CF527AE328EA597200A764DA /* Vertical */,
+			);
+			path = MATab;
+			sourceTree = "<group>";
+		};
+		CF28960D28EA4FAF006A63C6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4B48928D2925A008205DC /* Assets.xcassets */,
+				CF28960E28EA4FC0006A63C6 /* newtab.html */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		CF527AE328EA597200A764DA /* Vertical */ = {
+			isa = PBXGroup;
+			children = (
+				CF9A8C4D28D3434D002096C9 /* MATabBarViewController.swift */,
+				CF9A8C4E28D3434D002096C9 /* MATabBarViewController.xib */,
+			);
+			name = Vertical;
+			sourceTree = "<group>";
+		};
+		CF527AE428EA598600A764DA /* Horizontal */ = {
+			isa = PBXGroup;
+			children = (
+				CF527AE528EA59A800A764DA /* MATabBar.swift */,
+				CF0BF79328EA6FE7003820DE /* MATabBarButton.swift */,
+			);
+			path = Horizontal;
+			sourceTree = "<group>";
+		};
+		CFC4B47B28D2925A008205DC = {
+			isa = PBXGroup;
+			children = (
+				CF28960C28EA4A28006A63C6 /* Issues.md */,
+				CFC4B48628D2925A008205DC /* Malvon */,
+				CF09C05528D2AD9400832B34 /* Frameworks */,
+				CFC4B48528D2925A008205DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC4B48528D2925A008205DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4B48428D2925A008205DC /* Malvon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC4B48628D2925A008205DC /* Malvon */ = {
+			isa = PBXGroup;
+			children = (
+				ED55C72928F0DED20024039E /* Info.plist */,
+				CF28960D28EA4FAF006A63C6 /* Assets */,
+				CFC4B48728D2925A008205DC /* AppDelegate.swift */,
+				CF1F3F4D28D3E9450073E1DE /* Shared */,
+				CF1F3F5028D3EA600073E1DE /* Controller */,
+				CF1F3F4A28D3E7FA0073E1DE /* MAWebView */,
+				CF1F3F5228D3FA870073E1DE /* MATab */,
+				CFF0115328E9A4A000682250 /* MASearchField */,
+				CFC4B48B28D2925A008205DC /* MainMenu.xib */,
+				CFC4B48E28D2925A008205DC /* Malvon.entitlements */,
+				CF1F3F5128D3EA720073E1DE /* View */,
+			);
+			path = Malvon;
+			sourceTree = "<group>";
+		};
+		CFF0115328E9A4A000682250 /* MASearchField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MASearchField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC4B48328D2925A008205DC /* Malvon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC4B49128D2925A008205DC /* Build configuration list for PBXNativeTarget "Malvon" */;
+			buildPhases = (
+				CFC4B48028D2925A008205DC /* Sources */,
+				CFC4B48128D2925A008205DC /* Frameworks */,
+				CFC4B48228D2925A008205DC /* Resources */,
+				CF01CD5B28D2AF930061A712 /* Embed XPC Services */,
+				CF01CD5D28D2AF930061A712 /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Malvon;
+			productName = Malvon;
+			productReference = CFC4B48428D2925A008205DC /* Malvon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC4B47C28D2925A008205DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = MA;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "Ashwin Paudel";
+				TargetAttributes = {
+					CFC4B48328D2925A008205DC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = CFC4B47F28D2925A008205DC /* Build configuration list for PBXProject "Malvon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC4B47B28D2925A008205DC;
+			productRefGroup = CFC4B48528D2925A008205DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC4B48328D2925A008205DC /* Malvon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC4B48228D2925A008205DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC4B48A28D2925A008205DC /* Assets.xcassets in Resources */,
+				CF28960F28EA4FC0006A63C6 /* newtab.html in Resources */,
+				CFC4B49728D292CB008205DC /* MAWindowController.xib in Resources */,
+				CF9A8C5028D3434D002096C9 /* MATabBarViewController.xib in Resources */,
+				CFC4B49F28D2A2A0008205DC /* MAViewController.xib in Resources */,
+				CFC4B48D28D2925A008205DC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC4B48028D2925A008205DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F3F4F28D3E9570073E1DE /* Shared.swift in Sources */,
+				CFC4B48828D2925A008205DC /* AppDelegate.swift in Sources */,
+				CF1F3F5628D403700073E1DE /* MATabView.swift in Sources */,
+				CF527AE628EA59A800A764DA /* MATabBar.swift in Sources */,
+				CF1F3F5428D3FA980073E1DE /* MATabItem.swift in Sources */,
+				CFC4B49628D292CB008205DC /* MAWindowController.swift in Sources */,
+				CF78EFA728D53F46004EACF1 /* Actions.swift in Sources */,
+				CF0BF79428EA6FE7003820DE /* MATabBarButton.swift in Sources */,
+				CFC4B49E28D2A2A0008205DC /* MAViewController.swift in Sources */,
+				CF9A8C4F28D3434D002096C9 /* MATabBarViewController.swift in Sources */,
+				CFCC774C28D5610C00D4D6C6 /* MAViewController+WebView.swift in Sources */,
+				CF1F3F4C28D3E80A0073E1DE /* MAWebView.swift in Sources */,
+				CF527AE228EA586000A764DA /* Configuration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFC4B48B28D2925A008205DC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC4B48C28D2925A008205DC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFC4B48F28D2925A008205DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFC4B49028D2925A008205DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CFC4B49228D2925A008205DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Malvon/Malvon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Malvon/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.Malvon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFC4B49328D2925A008205DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Malvon/Malvon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Malvon/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.Malvon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC4B47F28D2925A008205DC /* Build configuration list for PBXProject "Malvon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC4B48F28D2925A008205DC /* Debug */,
+				CFC4B49028D2925A008205DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC4B49128D2925A008205DC /* Build configuration list for PBXNativeTarget "Malvon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC4B49228D2925A008205DC /* Debug */,
+				CFC4B49328D2925A008205DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFC4B47C28D2925A008205DC /* Project object */;
+}

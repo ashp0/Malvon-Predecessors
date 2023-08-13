@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="N1O-Jw-hHS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Yqz-p3-w0T">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="N1O-Jw-hHS" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="preference" id="4l0-NM-cnJ">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="163" y="197" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="775"/>
+                        <view key="contentView" id="rbp-KS-58n">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="N1O-Jw-hHS" id="3GV-H2-ldf"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="IiL-Uw-yXi" kind="relationship" relationship="window.shadowedContentViewController" id="UPY-3I-P8k"/>
+                    </connections>
+                </windowController>
+                <customObject id="pci-ZO-zTt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="125"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="gyw-x3-TrL">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="IiL-Uw-yXi" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="General" identifier="" id="Wov-po-kCa">
+                            <imageReference key="image" image="gearshape" catalog="system" symbolScale="default" renderingMode="template"/>
+                        </tabViewItem>
+                        <tabViewItem identifier="" id="Jwd-eI-4Ve"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="oiT-LT-3aM">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="IiL-Uw-yXi" id="Xug-Dr-9Vd"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="oiT-LT-3aM" id="NUe-T1-gax"/>
+                        <segue destination="W1a-AR-CZW" kind="relationship" relationship="tabItems" id="aRe-vl-b4W"/>
+                        <segue destination="tzb-8Z-Mgt" kind="relationship" relationship="tabItems" id="m1f-NX-ybw"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="w4W-hn-fia" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oQj-dT-RA0">
+            <objects>
+                <viewController title="View Controller" id="W1a-AR-CZW" sceneMemberID="viewController">
+                    <view key="view" id="WSO-gO-fS3">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-lK-XrW" userLabel="Boundries">
+                                <rect key="frame" x="10" y="10" width="430" height="280"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4O-5t-jdB">
+                                        <rect key="frame" x="10" y="250" width="219" height="20"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QRO-Ps-322">
+                                                <rect key="frame" x="-2" y="2" width="104" height="16"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Open popups in:" id="7qR-9O-d7I">
+                                                    <font key="font" usesAppearanceFont="YES"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EBL-Jd-yYn">
+                                                <rect key="frame" x="105" y="-4" width="118" height="25"/>
+                                                <popUpButtonCell key="cell" type="push" title="Automatic" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="nFs-OZ-CU1" id="DDT-BW-hcO">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="b8d-Lx-P8D">
+                                                        <items>
+                                                            <menuItem title="Automatic" state="on" id="nFs-OZ-CU1"/>
+                                                            <menuItem title="New Tab" id="zsZ-X9-Qno"/>
+                                                            <menuItem title="New Window" id="gwo-Ay-bGg"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                            </popUpButton>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n4O-5t-jdB" firstAttribute="top" secondItem="Fh8-lK-XrW" secondAttribute="top" constant="10" id="XEL-X3-7GF"/>
+                                    <constraint firstItem="n4O-5t-jdB" firstAttribute="leading" secondItem="Fh8-lK-XrW" secondAttribute="leading" constant="10" id="sdU-i8-YcK"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Fh8-lK-XrW" firstAttribute="top" secondItem="WSO-gO-fS3" secondAttribute="top" constant="10" id="GEm-GP-Z5X"/>
+                            <constraint firstItem="Fh8-lK-XrW" firstAttribute="leading" secondItem="WSO-gO-fS3" secondAttribute="leading" constant="10" id="lka-UJ-nFy"/>
+                            <constraint firstAttribute="trailing" secondItem="Fh8-lK-XrW" secondAttribute="trailing" constant="10" id="tUk-hd-7JQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Fh8-lK-XrW" secondAttribute="bottom" constant="10" id="tyO-re-5UK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="8Op-Pl-WhQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PgG-HZ-Ru4">
+            <objects>
+                <viewController id="tzb-8Z-Mgt" sceneMemberID="viewController">
+                    <view key="view" id="QfS-w0-CiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="r2H-0K-Viq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ExtensionConfirmationSheet" customModule="Unique" customModuleProvider="target">
+            <connections>
+                <outlet property="noBTN" destination="Zar-6o-JxZ" id="Acz-Qv-qKr"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="yesBTN" destination="jVf-N0-Dfu" id="bTM-am-wOF"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="32" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-lt-OHG">
+                    <rect key="frame" x="10" y="10" width="199" height="72"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="k15-fn-Whe">
+                            <rect key="frame" x="3" y="56" width="194" height="16"/>
+                            <textFieldCell key="cell" selectable="YES" alignment="center" title="Do you want to install [Name]?" id="ERW-0x-zbs">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rdG-8J-MWh">
+                            <rect key="frame" x="0.0" y="0.0" width="199" height="24"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zar-6o-JxZ">
+                                    <rect key="frame" x="-7" y="-5" width="104" height="32"/>
+                                    <buttonCell key="cell" type="push" title="No" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wp3-66-HDB">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="noAction:" target="-2" id="Uae-sZ-V1X"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-N0-Dfu">
+                                    <rect key="frame" x="103" y="-5" width="103" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Yes" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2cF-3d-3xF">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="yesAction:" target="-2" id="sgL-Xr-OYE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rdG-8J-MWh" firstAttribute="leading" secondItem="FUF-lt-OHG" secondAttribute="leading" id="GYC-4x-QI9"/>
+                        <constraint firstAttribute="trailing" secondItem="rdG-8J-MWh" secondAttribute="trailing" id="frn-8K-FiX"/>
+                    </constraints>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FUF-lt-OHG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="65h-iZ-aV6"/>
+                <constraint firstAttribute="trailing" secondItem="FUF-lt-OHG" secondAttribute="trailing" constant="10" id="Rkc-UL-VjB"/>
+                <constraint firstAttribute="bottom" secondItem="FUF-lt-OHG" secondAttribute="bottom" constant="10" id="dSK-Sm-42V"/>
+                <constraint firstItem="FUF-lt-OHG" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="hYD-wi-em7"/>
+            </constraints>
+            <point key="canvasLocation" x="-157.5" y="96"/>
+        </customView>
+    </objects>
+</document>

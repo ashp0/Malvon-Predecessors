@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1A301F28501571005E8AF9 /* MATab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A301A28501571005E8AF9 /* MATab.swift */; };
+		CF1A302028501571005E8AF9 /* MATabViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A301B28501571005E8AF9 /* MATabViewConfiguration.swift */; };
+		CF1A302128501571005E8AF9 /* MATabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A301C28501571005E8AF9 /* MATabBarItem.swift */; };
+		CF1A302228501571005E8AF9 /* MATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A301D28501571005E8AF9 /* MATabBar.swift */; };
+		CF1A302328501571005E8AF9 /* MATabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A301E28501571005E8AF9 /* MATabView.swift */; };
+		CF1A302928501672005E8AF9 /* MAFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302528501672005E8AF9 /* MAFile.swift */; };
+		CF1A302A28501672005E8AF9 /* MAURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302628501672005E8AF9 /* MAURL.swift */; };
+		CF1A302B28501672005E8AF9 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302728501672005E8AF9 /* Extension+String.swift */; };
+		CF1A302C28501672005E8AF9 /* MAPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302828501672005E8AF9 /* MAPaths.swift */; };
+		CF1A3036285016B6005E8AF9 /* MAHighlightingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302E285016B6005E8AF9 /* MAHighlightingView.swift */; };
+		CF1A3037285016B6005E8AF9 /* MASuggestionsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A302F285016B6005E8AF9 /* MASuggestionsWindow.swift */; };
+		CF1A3038285016B6005E8AF9 /* MASuggestionsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3030285016B6005E8AF9 /* MASuggestionsWindowController.swift */; };
+		CF1A3039285016B6005E8AF9 /* SearchSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3031285016B6005E8AF9 /* SearchSuggestions.swift */; };
+		CF1A303A285016B6005E8AF9 /* MASuggestibleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3032285016B6005E8AF9 /* MASuggestibleTextFieldCell.swift */; };
+		CF1A303B285016B6005E8AF9 /* MAFramworkDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1A3033285016B6005E8AF9 /* MAFramworkDefaultCell.xib */; };
+		CF1A303C285016B6005E8AF9 /* MARoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3034285016B6005E8AF9 /* MARoundedCornersView.swift */; };
+		CF1A303D285016B6005E8AF9 /* MAProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3035285016B6005E8AF9 /* MAProperties.swift */; };
+		CF1A3044285016D0005E8AF9 /* MAWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A303F285016CF005E8AF9 /* MAWebView.swift */; };
+		CF1A3045285016D0005E8AF9 /* MAWebViewDownloadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3040285016CF005E8AF9 /* MAWebViewDownloadingViewController.swift */; };
+		CF1A3046285016D0005E8AF9 /* FileUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3041285016D0005E8AF9 /* FileUnits.swift */; };
+		CF1A3047285016D0005E8AF9 /* MAWebViewDownloadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1A3042285016D0005E8AF9 /* MAWebViewDownloadingViewController.xib */; };
+		CF1A3048285016D0005E8AF9 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3043285016D0005E8AF9 /* Downloader.swift */; };
+		ED0B17DF277CEFF000BB47B1 /* Appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED0B17DE277CEFF000BB47B1 /* Appicon.icns */; };
+		ED8025C5277D695100427E5C /* newtab.html in Resources */ = {isa = PBXBuildFile; fileRef = ED8025C4277D695100427E5C /* newtab.html */; };
+		ED806EF6277F859B00D766F7 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED806EF5277F859B00D766F7 /* Preferences.storyboard */; };
+		ED806EF8277F87CB00D766F7 /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED806EF7277F87CB00D766F7 /* AppProperties.swift */; };
+		ED806EFA277F887A00D766F7 /* MAPrefsGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED806EF9277F887A00D766F7 /* MAPrefsGeneralViewController.swift */; };
+		ED806EFC277F8BB300D766F7 /* MAPrefsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED806EFB277F8BB300D766F7 /* MAPrefsTabViewController.swift */; };
+		EDD23ED127A4CCCC009B79B7 /* error_page.html in Resources */ = {isa = PBXBuildFile; fileRef = EDD23ED027A4CCCC009B79B7 /* error_page.html */; };
+		EDF62B2F277C96AF006DF3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B2E277C96AF006DF3EB /* AppDelegate.swift */; };
+		EDF62B31277C96B2006DF3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF62B30277C96B2006DF3EB /* Assets.xcassets */; };
+		EDF62B34277C96B2006DF3EB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF62B32277C96B2006DF3EB /* MainMenu.xib */; };
+		EDF62B3F277C96B2006DF3EB /* MalvonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B3E277C96B2006DF3EB /* MalvonTests.swift */; };
+		EDF62B49277C96B3006DF3EB /* MalvonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B48277C96B3006DF3EB /* MalvonUITests.swift */; };
+		EDF62B4B277C96B3006DF3EB /* MalvonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B4A277C96B3006DF3EB /* MalvonUITestsLaunchTests.swift */; };
+		EDF62B59277C96D3006DF3EB /* MAWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B57277C96D3006DF3EB /* MAWindowController.swift */; };
+		EDF62B5A277C96D3006DF3EB /* MAWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF62B58277C96D3006DF3EB /* MAWindowController.xib */; };
+		EDF62B5D277C9738006DF3EB /* MAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B5B277C9738006DF3EB /* MAViewController.swift */; };
+		EDF62B5E277C9738006DF3EB /* MAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF62B5C277C9738006DF3EB /* MAViewController.xib */; };
+		EDF62B92277C9887006DF3EB /* MADownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B8E277C9887006DF3EB /* MADownloadsTableViewCell.swift */; };
+		EDF62B93277C9887006DF3EB /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B8F277C9887006DF3EB /* HoverButton.swift */; };
+		EDF62B94277C9887006DF3EB /* MATabsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B90277C9887006DF3EB /* MATabsTableViewCell.swift */; };
+		EDF62B95277C9887006DF3EB /* MASearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B91277C9887006DF3EB /* MASearchField.swift */; };
+		EDF62BA1277C98AC006DF3EB /* HistoryJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B9E277C98AB006DF3EB /* HistoryJSONModel.swift */; };
+		EDF62BA2277C98AC006DF3EB /* TabsJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62B9F277C98AC006DF3EB /* TabsJSONModel.swift */; };
+		EDF62BA3277C98AC006DF3EB /* DownloadsJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62BA0277C98AC006DF3EB /* DownloadsJSONModel.swift */; };
+		EDF62BA6277C98F7006DF3EB /* MADownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62BA4277C98F7006DF3EB /* MADownloadsViewController.swift */; };
+		EDF62BA7277C98F7006DF3EB /* MADownloadsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF62BA5277C98F7006DF3EB /* MADownloadsViewController.xib */; };
+		EDF62BAE277C99B7006DF3EB /* MAHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF62BAC277C99B7006DF3EB /* MAHistoryViewController.swift */; };
+		EDF62BAF277C99B7006DF3EB /* MAHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF62BAD277C99B7006DF3EB /* MAHistoryViewController.xib */; };
+		EDF62BBA277CB24B006DF3EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EDF62BB9277CB24B006DF3EB /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDD1A0F0277E73E8002BB362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD1A0EC277E73E7002BB362 /* Malvon Updater.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDD1A0DA277E73E3002BB362;
+			remoteInfo = "Malvon Updater";
+		};
+		EDF62B3B277C96B2006DF3EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF62B23277C96AF006DF3EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF62B2A277C96AF006DF3EB;
+			remoteInfo = Malvon;
+		};
+		EDF62B45277C96B3006DF3EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF62B23277C96AF006DF3EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF62B2A277C96AF006DF3EB;
+			remoteInfo = Malvon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDD24394277CC01B00926C9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF1A301A28501571005E8AF9 /* MATab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATab.swift; sourceTree = "<group>"; };
+		CF1A301B28501571005E8AF9 /* MATabViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATabViewConfiguration.swift; sourceTree = "<group>"; };
+		CF1A301C28501571005E8AF9 /* MATabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATabBarItem.swift; sourceTree = "<group>"; };
+		CF1A301D28501571005E8AF9 /* MATabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATabBar.swift; sourceTree = "<group>"; };
+		CF1A301E28501571005E8AF9 /* MATabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATabView.swift; sourceTree = "<group>"; };
+		CF1A302528501672005E8AF9 /* MAFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAFile.swift; sourceTree = "<group>"; };
+		CF1A302628501672005E8AF9 /* MAURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAURL.swift; sourceTree = "<group>"; };
+		CF1A302728501672005E8AF9 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		CF1A302828501672005E8AF9 /* MAPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAPaths.swift; sourceTree = "<group>"; };
+		CF1A302E285016B6005E8AF9 /* MAHighlightingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAHighlightingView.swift; sourceTree = "<group>"; };
+		CF1A302F285016B6005E8AF9 /* MASuggestionsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MASuggestionsWindow.swift; sourceTree = "<group>"; };
+		CF1A3030285016B6005E8AF9 /* MASuggestionsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MASuggestionsWindowController.swift; sourceTree = "<group>"; };
+		CF1A3031285016B6005E8AF9 /* SearchSuggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSuggestions.swift; sourceTree = "<group>"; };
+		CF1A3032285016B6005E8AF9 /* MASuggestibleTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MASuggestibleTextFieldCell.swift; sourceTree = "<group>"; };
+		CF1A3033285016B6005E8AF9 /* MAFramworkDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MAFramworkDefaultCell.xib; sourceTree = "<group>"; };
+		CF1A3034285016B6005E8AF9 /* MARoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MARoundedCornersView.swift; sourceTree = "<group>"; };
+		CF1A3035285016B6005E8AF9 /* MAProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAProperties.swift; sourceTree = "<group>"; };
+		CF1A303F285016CF005E8AF9 /* MAWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAWebView.swift; sourceTree = "<group>"; };
+		CF1A3040285016CF005E8AF9 /* MAWebViewDownloadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAWebViewDownloadingViewController.swift; sourceTree = "<group>"; };
+		CF1A3041285016D0005E8AF9 /* FileUnits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUnits.swift; sourceTree = "<group>"; };
+		CF1A3042285016D0005E8AF9 /* MAWebViewDownloadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MAWebViewDownloadingViewController.xib; sourceTree = "<group>"; };
+		CF1A3043285016D0005E8AF9 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		ED00099527A731E2001F2712 /* Building.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Building.md; sourceTree = "<group>"; };
+		ED0B17DE277CEFF000BB47B1 /* Appicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Appicon.icns; sourceTree = "<group>"; };
+		ED3CC6C3277D1AA400C0823E /* version.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		ED79F0B9277E64FB0047BB86 /* update_feature_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = update_feature_list.txt; sourceTree = "<group>"; };
+		ED8025C4277D695100427E5C /* newtab.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = newtab.html; sourceTree = "<group>"; };
+		ED806EF5277F859B00D766F7 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		ED806EF7277F87CB00D766F7 /* AppProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProperties.swift; sourceTree = "<group>"; };
+		ED806EF9277F887A00D766F7 /* MAPrefsGeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPrefsGeneralViewController.swift; sourceTree = "<group>"; };
+		ED806EFB277F8BB300D766F7 /* MAPrefsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPrefsTabViewController.swift; sourceTree = "<group>"; };
+		ED90E64227B158D500CF06D4 /* Features.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Features.md; sourceTree = "<group>"; };
+		EDB840EF27A4AF7100173C13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD08B01277D812E000C866B /* Changes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changes.md; sourceTree = "<group>"; };
+		EDD1A0EC277E73E7002BB362 /* Malvon Updater.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Malvon Updater.xcodeproj"; path = "Malvon Updater/Malvon Updater.xcodeproj"; sourceTree = "<group>"; };
+		EDD23ED027A4CCCC009B79B7 /* error_page.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = error_page.html; sourceTree = "<group>"; };
+		EDF62B2B277C96AF006DF3EB /* Malvon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Malvon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF62B2E277C96AF006DF3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF62B30277C96B2006DF3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF62B33277C96B2006DF3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EDF62B35277C96B2006DF3EB /* Malvon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Malvon.entitlements; sourceTree = "<group>"; };
+		EDF62B3A277C96B2006DF3EB /* MalvonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MalvonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF62B3E277C96B2006DF3EB /* MalvonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalvonTests.swift; sourceTree = "<group>"; };
+		EDF62B44277C96B3006DF3EB /* MalvonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MalvonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF62B48277C96B3006DF3EB /* MalvonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalvonUITests.swift; sourceTree = "<group>"; };
+		EDF62B4A277C96B3006DF3EB /* MalvonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalvonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDF62B57277C96D3006DF3EB /* MAWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAWindowController.swift; sourceTree = "<group>"; };
+		EDF62B58277C96D3006DF3EB /* MAWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAWindowController.xib; sourceTree = "<group>"; };
+		EDF62B5B277C9738006DF3EB /* MAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAViewController.swift; sourceTree = "<group>"; };
+		EDF62B5C277C9738006DF3EB /* MAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAViewController.xib; sourceTree = "<group>"; };
+		EDF62B8E277C9887006DF3EB /* MADownloadsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MADownloadsTableViewCell.swift; sourceTree = "<group>"; };
+		EDF62B8F277C9887006DF3EB /* HoverButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
+		EDF62B90277C9887006DF3EB /* MATabsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MATabsTableViewCell.swift; sourceTree = "<group>"; };
+		EDF62B91277C9887006DF3EB /* MASearchField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MASearchField.swift; sourceTree = "<group>"; };
+		EDF62B9E277C98AB006DF3EB /* HistoryJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryJSONModel.swift; sourceTree = "<group>"; };
+		EDF62B9F277C98AC006DF3EB /* TabsJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsJSONModel.swift; sourceTree = "<group>"; };
+		EDF62BA0277C98AC006DF3EB /* DownloadsJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsJSONModel.swift; sourceTree = "<group>"; };
+		EDF62BA4277C98F7006DF3EB /* MADownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADownloadsViewController.swift; sourceTree = "<group>"; };
+		EDF62BA5277C98F7006DF3EB /* MADownloadsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MADownloadsViewController.xib; sourceTree = "<group>"; };
+		EDF62BAC277C99B7006DF3EB /* MAHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAHistoryViewController.swift; sourceTree = "<group>"; };
+		EDF62BAD277C99B7006DF3EB /* MAHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAHistoryViewController.xib; sourceTree = "<group>"; };
+		EDF62BB9277CB24B006DF3EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF62B28277C96AF006DF3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B37277C96B2006DF3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B41277C96B3006DF3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1A30192850155A005E8AF9 /* MATabView */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A301A28501571005E8AF9 /* MATab.swift */,
+				CF1A301D28501571005E8AF9 /* MATabBar.swift */,
+				CF1A301C28501571005E8AF9 /* MATabBarItem.swift */,
+				CF1A301E28501571005E8AF9 /* MATabView.swift */,
+				CF1A301B28501571005E8AF9 /* MATabViewConfiguration.swift */,
+			);
+			path = MATabView;
+			sourceTree = "<group>";
+		};
+		CF1A302428501668005E8AF9 /* MATools */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A302528501672005E8AF9 /* MAFile.swift */,
+				CF1A302828501672005E8AF9 /* MAPaths.swift */,
+				CF1A302728501672005E8AF9 /* Extension+String.swift */,
+				CF1A302628501672005E8AF9 /* MAURL.swift */,
+			);
+			path = MATools;
+			sourceTree = "<group>";
+		};
+		CF1A302D285016A6005E8AF9 /* MASearchSuggestions */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A3033285016B6005E8AF9 /* MAFramworkDefaultCell.xib */,
+				CF1A302E285016B6005E8AF9 /* MAHighlightingView.swift */,
+				CF1A3034285016B6005E8AF9 /* MARoundedCornersView.swift */,
+				CF1A3032285016B6005E8AF9 /* MASuggestibleTextFieldCell.swift */,
+				CF1A302F285016B6005E8AF9 /* MASuggestionsWindow.swift */,
+				CF1A3030285016B6005E8AF9 /* MASuggestionsWindowController.swift */,
+				CF1A3031285016B6005E8AF9 /* SearchSuggestions.swift */,
+				CF1A3035285016B6005E8AF9 /* MAProperties.swift */,
+			);
+			path = MASearchSuggestions;
+			sourceTree = "<group>";
+		};
+		CF1A303E285016C7005E8AF9 /* MAWebView */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A303F285016CF005E8AF9 /* MAWebView.swift */,
+				CF1A3043285016D0005E8AF9 /* Downloader.swift */,
+				CF1A3041285016D0005E8AF9 /* FileUnits.swift */,
+				CF1A3040285016CF005E8AF9 /* MAWebViewDownloadingViewController.swift */,
+				CF1A3042285016D0005E8AF9 /* MAWebViewDownloadingViewController.xib */,
+			);
+			path = MAWebView;
+			sourceTree = "<group>";
+		};
+		ED00099427A731CF001F2712 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				ED00099527A731E2001F2712 /* Building.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		ED8025BF277D693E00427E5C /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				ED8025C4277D695100427E5C /* newtab.html */,
+				EDD23ED027A4CCCC009B79B7 /* error_page.html */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		ED806EED277F858400D766F7 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				ED806EF5277F859B00D766F7 /* Preferences.storyboard */,
+				ED806EF9277F887A00D766F7 /* MAPrefsGeneralViewController.swift */,
+				ED806EFB277F8BB300D766F7 /* MAPrefsTabViewController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		EDD1A0CA277E73C0002BB362 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1A0EC277E73E7002BB362 /* Malvon Updater.xcodeproj */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		EDD1A0ED277E73E7002BB362 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1A0F1277E73E8002BB362 /* Malvon Updater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF62B22277C96AF006DF3EB = {
+			isa = PBXGroup;
+			children = (
+				ED00099427A731CF001F2712 /* Docs */,
+				EDF62B2D277C96AF006DF3EB /* Malvon */,
+				EDF62B3D277C96B2006DF3EB /* MalvonTests */,
+				EDF62B47277C96B3006DF3EB /* MalvonUITests */,
+				EDD1A0CA277E73C0002BB362 /* Applications */,
+				EDD08B01277D812E000C866B /* Changes.md */,
+				ED90E64227B158D500CF06D4 /* Features.md */,
+				EDF62BB9277CB24B006DF3EB /* README.md */,
+				EDF62B2C277C96AF006DF3EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF62B2C277C96AF006DF3EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B2B277C96AF006DF3EB /* Malvon.app */,
+				EDF62B3A277C96B2006DF3EB /* MalvonTests.xctest */,
+				EDF62B44277C96B3006DF3EB /* MalvonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF62B2D277C96AF006DF3EB /* Malvon */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A303E285016C7005E8AF9 /* MAWebView */,
+				CF1A302D285016A6005E8AF9 /* MASearchSuggestions */,
+				CF1A302428501668005E8AF9 /* MATools */,
+				CF1A30192850155A005E8AF9 /* MATabView */,
+				EDF62B2E277C96AF006DF3EB /* AppDelegate.swift */,
+				ED0B17DE277CEFF000BB47B1 /* Appicon.icns */,
+				ED806EF7277F87CB00D766F7 /* AppProperties.swift */,
+				EDF62BB0277CA4FB006DF3EB /* Controllers */,
+				EDB840EF27A4AF7100173C13 /* Info.plist */,
+				EDF62B32277C96B2006DF3EB /* MainMenu.xib */,
+				EDF62BB1277CA577006DF3EB /* Models */,
+				ED806EED277F858400D766F7 /* Preferences */,
+				EDF62BB5277CA5B7006DF3EB /* Resources */,
+				EDF62BB2277CA586006DF3EB /* View Models */,
+				EDF62BB4277CA5AC006DF3EB /* Views */,
+			);
+			path = Malvon;
+			sourceTree = "<group>";
+		};
+		EDF62B3D277C96B2006DF3EB /* MalvonTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B3E277C96B2006DF3EB /* MalvonTests.swift */,
+			);
+			path = MalvonTests;
+			sourceTree = "<group>";
+		};
+		EDF62B47277C96B3006DF3EB /* MalvonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B48277C96B3006DF3EB /* MalvonUITests.swift */,
+				EDF62B4A277C96B3006DF3EB /* MalvonUITestsLaunchTests.swift */,
+			);
+			path = MalvonUITests;
+			sourceTree = "<group>";
+		};
+		EDF62BB0277CA4FB006DF3EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B57277C96D3006DF3EB /* MAWindowController.swift */,
+				EDF62B5B277C9738006DF3EB /* MAViewController.swift */,
+				EDF62BA4277C98F7006DF3EB /* MADownloadsViewController.swift */,
+				EDF62BAC277C99B7006DF3EB /* MAHistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDF62BB1277CA577006DF3EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62BA0277C98AC006DF3EB /* DownloadsJSONModel.swift */,
+				EDF62B9E277C98AB006DF3EB /* HistoryJSONModel.swift */,
+				EDF62B9F277C98AC006DF3EB /* TabsJSONModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDF62BB2277CA586006DF3EB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B8F277C9887006DF3EB /* HoverButton.swift */,
+				EDF62B8E277C9887006DF3EB /* MADownloadsTableViewCell.swift */,
+				EDF62B91277C9887006DF3EB /* MASearchField.swift */,
+				EDF62B90277C9887006DF3EB /* MATabsTableViewCell.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EDF62BB4277CA5AC006DF3EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDF62B58277C96D3006DF3EB /* MAWindowController.xib */,
+				EDF62B5C277C9738006DF3EB /* MAViewController.xib */,
+				EDF62BA5277C98F7006DF3EB /* MADownloadsViewController.xib */,
+				EDF62BAD277C99B7006DF3EB /* MAHistoryViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDF62BB5277CA5B7006DF3EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED8025BF277D693E00427E5C /* pages */,
+				ED3CC6C3277D1AA400C0823E /* version.txt */,
+				EDF62B30277C96B2006DF3EB /* Assets.xcassets */,
+				EDF62B35277C96B2006DF3EB /* Malvon.entitlements */,
+				ED79F0B9277E64FB0047BB86 /* update_feature_list.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF62B2A277C96AF006DF3EB /* Malvon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF62B4E277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "Malvon" */;
+			buildPhases = (
+				EDF62B27277C96AF006DF3EB /* Sources */,
+				EDF62B28277C96AF006DF3EB /* Frameworks */,
+				EDF62B29277C96AF006DF3EB /* Resources */,
+				EDD24394277CC01B00926C9B /* Embed Frameworks */,
+				EDD4E25027A43FF40073D179 /* Install Updater Application */,
+				EDD4E25227A4434B0073D179 /* Remove Useless Files */,
+				ED770A1927A4471200686499 /* Compress File */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Malvon;
+			productName = Malvon;
+			productReference = EDF62B2B277C96AF006DF3EB /* Malvon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF62B39277C96B2006DF3EB /* MalvonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF62B51277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "MalvonTests" */;
+			buildPhases = (
+				EDF62B36277C96B2006DF3EB /* Sources */,
+				EDF62B37277C96B2006DF3EB /* Frameworks */,
+				EDF62B38277C96B2006DF3EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF62B3C277C96B2006DF3EB /* PBXTargetDependency */,
+			);
+			name = MalvonTests;
+			productName = MalvonTests;
+			productReference = EDF62B3A277C96B2006DF3EB /* MalvonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF62B43277C96B3006DF3EB /* MalvonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF62B54277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "MalvonUITests" */;
+			buildPhases = (
+				EDF62B40277C96B3006DF3EB /* Sources */,
+				EDF62B41277C96B3006DF3EB /* Frameworks */,
+				EDF62B42277C96B3006DF3EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF62B46277C96B3006DF3EB /* PBXTargetDependency */,
+			);
+			name = MalvonUITests;
+			productName = MalvonUITests;
+			productReference = EDF62B44277C96B3006DF3EB /* MalvonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF62B23277C96AF006DF3EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = MA;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "Ashwin Paudel";
+				TargetAttributes = {
+					EDF62B2A277C96AF006DF3EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					EDF62B39277C96B2006DF3EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EDF62B2A277C96AF006DF3EB;
+					};
+					EDF62B43277C96B3006DF3EB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EDF62B2A277C96AF006DF3EB;
+					};
+				};
+			};
+			buildConfigurationList = EDF62B26277C96AF006DF3EB /* Build configuration list for PBXProject "Malvon" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF62B22277C96AF006DF3EB;
+			productRefGroup = EDF62B2C277C96AF006DF3EB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EDD1A0ED277E73E7002BB362 /* Products */;
+					ProjectRef = EDD1A0EC277E73E7002BB362 /* Malvon Updater.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EDF62B2A277C96AF006DF3EB /* Malvon */,
+				EDF62B39277C96B2006DF3EB /* MalvonTests */,
+				EDF62B43277C96B3006DF3EB /* MalvonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EDD1A0F1277E73E8002BB362 /* Malvon Updater.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Malvon Updater.app";
+			remoteRef = EDD1A0F0277E73E8002BB362 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF62B29277C96AF006DF3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF62B31277C96B2006DF3EB /* Assets.xcassets in Resources */,
+				EDF62B5A277C96D3006DF3EB /* MAWindowController.xib in Resources */,
+				ED8025C5277D695100427E5C /* newtab.html in Resources */,
+				EDF62BAF277C99B7006DF3EB /* MAHistoryViewController.xib in Resources */,
+				ED0B17DF277CEFF000BB47B1 /* Appicon.icns in Resources */,
+				CF1A303B285016B6005E8AF9 /* MAFramworkDefaultCell.xib in Resources */,
+				EDF62B5E277C9738006DF3EB /* MAViewController.xib in Resources */,
+				EDF62BA7277C98F7006DF3EB /* MADownloadsViewController.xib in Resources */,
+				EDD23ED127A4CCCC009B79B7 /* error_page.html in Resources */,
+				ED806EF6277F859B00D766F7 /* Preferences.storyboard in Resources */,
+				EDF62B34277C96B2006DF3EB /* MainMenu.xib in Resources */,
+				CF1A3047285016D0005E8AF9 /* MAWebViewDownloadingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B38277C96B2006DF3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B42277C96B3006DF3EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF62BBA277CB24B006DF3EB /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED770A1927A4471200686499 /* Compress File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compress File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nzip $TARGET_BUILD_DIR/Malvon.$MARKETING_VERSION.zip $TARGET_BUILD_DIR/Malvon.app\n";
+		};
+		EDD4E25027A43FF40073D179 /* Install Updater Application */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Install Updater Application";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -e $TARGET_BUILD_DIR/Malvon.app/Contents/Applications ]\nthen\n    echo \"Directory Exists\"\nelse\n    mkdir $TARGET_BUILD_DIR/Malvon.app/Contents/Applications\n    mv $TARGET_BUILD_DIR/Malvon\\ Updater.app $TARGET_BUILD_DIR/Malvon.app/Contents/Applications\nfi\n";
+		};
+		EDD4E25227A4434B0073D179 /* Remove Useless Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove Useless Files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path\nrm -rf $TARGET_BUILD_DIR/Malvon.app/Contents/Applications/Malvon\\ Updater.app/Contents/Frameworks/*.dylib\nrm -rf $TARGET_BUILD_DIR/Malvon.app/Contents/Frameworks/*.dylib\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF62B27277C96AF006DF3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF62B2F277C96AF006DF3EB /* AppDelegate.swift in Sources */,
+				EDF62BA1277C98AC006DF3EB /* HistoryJSONModel.swift in Sources */,
+				CF1A3036285016B6005E8AF9 /* MAHighlightingView.swift in Sources */,
+				EDF62B92277C9887006DF3EB /* MADownloadsTableViewCell.swift in Sources */,
+				EDF62BA2277C98AC006DF3EB /* TabsJSONModel.swift in Sources */,
+				CF1A3037285016B6005E8AF9 /* MASuggestionsWindow.swift in Sources */,
+				CF1A302028501571005E8AF9 /* MATabViewConfiguration.swift in Sources */,
+				EDF62B95277C9887006DF3EB /* MASearchField.swift in Sources */,
+				CF1A302328501571005E8AF9 /* MATabView.swift in Sources */,
+				CF1A303C285016B6005E8AF9 /* MARoundedCornersView.swift in Sources */,
+				EDF62BAE277C99B7006DF3EB /* MAHistoryViewController.swift in Sources */,
+				EDF62B59277C96D3006DF3EB /* MAWindowController.swift in Sources */,
+				CF1A303A285016B6005E8AF9 /* MASuggestibleTextFieldCell.swift in Sources */,
+				CF1A303D285016B6005E8AF9 /* MAProperties.swift in Sources */,
+				CF1A302128501571005E8AF9 /* MATabBarItem.swift in Sources */,
+				CF1A3048285016D0005E8AF9 /* Downloader.swift in Sources */,
+				EDF62B93277C9887006DF3EB /* HoverButton.swift in Sources */,
+				EDF62BA6277C98F7006DF3EB /* MADownloadsViewController.swift in Sources */,
+				CF1A3044285016D0005E8AF9 /* MAWebView.swift in Sources */,
+				ED806EFA277F887A00D766F7 /* MAPrefsGeneralViewController.swift in Sources */,
+				EDF62B5D277C9738006DF3EB /* MAViewController.swift in Sources */,
+				CF1A302228501571005E8AF9 /* MATabBar.swift in Sources */,
+				CF1A3046285016D0005E8AF9 /* FileUnits.swift in Sources */,
+				CF1A302B28501672005E8AF9 /* Extension+String.swift in Sources */,
+				CF1A3045285016D0005E8AF9 /* MAWebViewDownloadingViewController.swift in Sources */,
+				CF1A301F28501571005E8AF9 /* MATab.swift in Sources */,
+				CF1A3038285016B6005E8AF9 /* MASuggestionsWindowController.swift in Sources */,
+				CF1A302928501672005E8AF9 /* MAFile.swift in Sources */,
+				EDF62BA3277C98AC006DF3EB /* DownloadsJSONModel.swift in Sources */,
+				ED806EFC277F8BB300D766F7 /* MAPrefsTabViewController.swift in Sources */,
+				CF1A302A28501672005E8AF9 /* MAURL.swift in Sources */,
+				ED806EF8277F87CB00D766F7 /* AppProperties.swift in Sources */,
+				CF1A302C28501672005E8AF9 /* MAPaths.swift in Sources */,
+				EDF62B94277C9887006DF3EB /* MATabsTableViewCell.swift in Sources */,
+				CF1A3039285016B6005E8AF9 /* SearchSuggestions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B36277C96B2006DF3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF62B3F277C96B2006DF3EB /* MalvonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF62B40277C96B3006DF3EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF62B49277C96B3006DF3EB /* MalvonUITests.swift in Sources */,
+				EDF62B4B277C96B3006DF3EB /* MalvonUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF62B3C277C96B2006DF3EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF62B2A277C96AF006DF3EB /* Malvon */;
+			targetProxy = EDF62B3B277C96B2006DF3EB /* PBXContainerItemProxy */;
+		};
+		EDF62B46277C96B3006DF3EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF62B2A277C96AF006DF3EB /* Malvon */;
+			targetProxy = EDF62B45277C96B3006DF3EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF62B32277C96B2006DF3EB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF62B33277C96B2006DF3EB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF62B4C277C96B3006DF3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDF62B4D277C96B3006DF3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EDF62B4F277C96B3006DF3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Malvon/Resources/Malvon.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Malvon/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021-2022 Ashwin Paudel. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Microphone;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.Malvon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EDF62B50277C96B3006DF3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Malvon/Resources/Malvon.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Malvon/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021-2022 Ashwin Paudel. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Microphone;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.Malvon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EDF62B52277C96B3006DF3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.MalvonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Malvon.app/Contents/MacOS/Malvon";
+			};
+			name = Debug;
+		};
+		EDF62B53277C96B3006DF3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.MalvonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Malvon.app/Contents/MacOS/Malvon";
+			};
+			name = Release;
+		};
+		EDF62B55277C96B3006DF3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.MalvonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Malvon;
+			};
+			name = Debug;
+		};
+		EDF62B56277C96B3006DF3EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = B29PGN9AG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashwin.MalvonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Malvon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF62B26277C96AF006DF3EB /* Build configuration list for PBXProject "Malvon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF62B4C277C96B3006DF3EB /* Debug */,
+				EDF62B4D277C96B3006DF3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF62B4E277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "Malvon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF62B4F277C96B3006DF3EB /* Debug */,
+				EDF62B50277C96B3006DF3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF62B51277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "MalvonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF62B52277C96B3006DF3EB /* Debug */,
+				EDF62B53277C96B3006DF3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF62B54277C96B3006DF3EB /* Build configuration list for PBXNativeTarget "MalvonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF62B55277C96B3006DF3EB /* Debug */,
+				EDF62B56277C96B3006DF3EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF62B23277C96AF006DF3EB /* Project object */;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="openInBrowser" customModule="Unique" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-6P-sj7">
+                    <rect key="frame" x="-7" y="-7" width="164" height="32"/>
+                    <buttonCell key="cell" type="push" title="Open in New Tab" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xxk-lB-ync">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openInBrowser:" target="-2" id="Uvz-M9-7xH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="b0G-6P-sj7" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="TBE-Y1-X6g"/>
+                <constraint firstItem="b0G-6P-sj7" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="USW-06-yPb"/>
+                <constraint firstAttribute="bottom" secondItem="b0G-6P-sj7" secondAttribute="bottom" id="rri-Ie-w0F"/>
+                <constraint firstAttribute="trailing" secondItem="b0G-6P-sj7" secondAttribute="trailing" id="sbn-g0-MGl"/>
+            </constraints>
+            <point key="canvasLocation" x="-161" y="121"/>
+        </customView>
+    </objects>
+</document>

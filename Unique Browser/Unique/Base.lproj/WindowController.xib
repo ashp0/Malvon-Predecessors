@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WindowController" customModule="Unique" customModuleProvider="target">
+            <connections>
+                <outlet property="bfrSegmentControl" destination="DIY-p9-PBr" id="QDq-1r-nwc"/>
+                <outlet property="progressIndicator" destination="9Qy-1y-66h" id="kAm-kI-JhP"/>
+                <outlet property="searchField" destination="92I-8b-e0i" id="MeC-jD-eyi"/>
+                <outlet property="searchFieldToolbarItem" destination="KkG-3t-pJ1" id="DoP-rj-ih9"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="unbrowserwindowstate" animationBehavior="default" toolbarStyle="unified" titleVisibility="hidden" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="543" y="177" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="775"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="4A9AA77F-8E32-4FBA-BDBE-7CF9F01A6468" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="vO4-b3-rsy">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="ABl-Ud-PQg"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="rz5-HX-IvB"/>
+                    <toolbarItem implicitItemIdentifier="D649973D-4E0F-47A8-89AE-EE1C8E40BE47" label="Custom View" paletteLabel="Custom View" image="sidebar.squares.left" catalog="system" sizingBehavior="auto" id="IUK-qX-rEf">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" id="bun-7i-fDb">
+                            <rect key="frame" x="23" y="14" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="sidebar.squares.left" catalog="system" imagePosition="only" alignment="center" controlSize="large" imageScaling="proportionallyDown" inset="2" id="tyj-HE-UXh">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="toogleExtensionSidebar:" target="-2" id="DlG-yb-YAs"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="8EAEF459-6215-4284-8E58-3B8319340991" label="Back/Forward/Refresh" paletteLabel="Back/Forward/Refresh" sizingBehavior="auto" id="z3s-ci-ckj">
+                        <nil key="toolTip"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="DIY-p9-PBr">
+                            <rect key="frame" x="5" y="14" width="114" height="26"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <segmentedCell key="cell" controlSize="large" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="1WO-wN-67Z">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSGoBackTemplate" width="32"/>
+                                    <segment image="NSGoForwardTemplate" width="32" tag="1"/>
+                                    <segment image="NSRefreshTemplate" width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="bfrSegment:" target="-2" id="SgF-O5-fAw"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="B11D7325-E56C-4C1E-A1BE-6B5CC2AB60D9" label="Search Field" paletteLabel="Search Field" tag="-1" sizingBehavior="auto" id="KkG-3t-pJ1">
+                        <nil key="toolTip"/>
+                        <stackView key="view" distribution="fill" orientation="vertical" alignment="leading" spacing="-7" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" id="GgI-cS-DFq">
+                            <rect key="frame" x="0.0" y="14" width="100" height="35"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92I-8b-e0i">
+                                    <rect key="frame" x="0.0" y="5" width="100" height="30"/>
+                                    <searchFieldCell key="cell" controlSize="large" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel"  usesSingleLineMode="YES" bezelStyle="round" customClass="URLSearchfield" id="jYj-ti-dMh">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </searchFieldCell>
+                                    <connections>
+                                        <action selector="searchFieldAction:" target="-2" id="uH8-56-X6f"/>
+                                    </connections>
+                                </searchField>
+                                <progressIndicator maxValue="100" doubleValue="50" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="9Qy-1y-66h">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="12"/>
+                                </progressIndicator>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="9Qy-1y-66h" firstAttribute="leading" secondItem="GgI-cS-DFq" secondAttribute="leading" id="OJd-rv-aEh"/>
+                                <constraint firstAttribute="trailing" secondItem="9Qy-1y-66h" secondAttribute="trailing" id="SDp-Qo-MH3"/>
+                                <constraint firstItem="92I-8b-e0i" firstAttribute="leading" secondItem="GgI-cS-DFq" secondAttribute="leading" id="bmn-2q-hCz"/>
+                                <constraint firstAttribute="trailing" secondItem="92I-8b-e0i" secondAttribute="trailing" id="gR6-be-k0C"/>
+                            </constraints>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="31577243-E8CA-463E-A95B-A3C0F6D6E102" label="New Tab" paletteLabel="New Tab" image="NSAddTemplate" sizingBehavior="auto" id="rmX-Mk-eSt">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" id="A6y-gJ-Kkx">
+                            <rect key="frame" x="11" y="14" width="30.5" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="NSAddTemplate" imagePosition="only" alignment="center" controlSize="large" imageScaling="proportionallyDown" inset="2" id="aBm-lB-IlJ">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="createNewTabBtn:" target="-2" id="nE0-Gf-OQG"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="IUK-qX-rEf"/>
+                    <toolbarItem reference="z3s-ci-ckj"/>
+                    <toolbarItem reference="rz5-HX-IvB"/>
+                    <toolbarItem reference="KkG-3t-pJ1"/>
+                    <toolbarItem reference="rz5-HX-IvB"/>
+                    <toolbarItem reference="rz5-HX-IvB"/>
+                    <toolbarItem reference="rmX-Mk-eSt"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="111"/>
+        </window>
+        <customView id="Dau-yD-SAE">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <point key="canvasLocation" x="3" y="406.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="NSGoBackTemplate" width="10" height="14"/>
+        <image name="NSGoForwardTemplate" width="10" height="14"/>
+        <image name="NSRefreshTemplate" width="14" height="16"/>
+        <image name="sidebar.squares.left" catalog="system" width="18" height="14"/>
+    </resources>
+</document>

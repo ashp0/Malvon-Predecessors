@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21179.7"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MAViewController" customModule="Malvon" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewTabButtonOutlet" destination="q8L-5E-bWD" id="ZaG-1X-vaV"/>
+                <outlet property="backButtonOutlet" destination="Jdg-BP-fje" id="TqU-Ns-htE"/>
+                <outlet property="backForwardButtonStackView" destination="WUV-lC-r8G" id="hQS-R0-KyY"/>
+                <outlet property="controlButtonBox" destination="ucC-9r-3Ih" id="HUM-OT-DVW"/>
+                <outlet property="forwardButtonOutlet" destination="nIJ-8Z-Syk" id="Ybx-TY-fD8"/>
+                <outlet property="progressIndicator" destination="hRj-KC-y0I" id="yh3-Un-oIE"/>
+                <outlet property="refreshButton" destination="SBy-me-3uk" id="iJX-MZ-yQ4"/>
+                <outlet property="searchField" destination="QEv-1d-jkS" id="ZCp-UQ-61p"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="Bzk-7g-zJq"/>
+                <outlet property="webContentView" destination="Hmp-yZ-mmV" id="nRX-yd-r3M"/>
+                <outlet property="webTabView" destination="Hmp-yZ-mmV" id="jin-WX-q0I"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1045" height="485"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-9r-3Ih">
+                    <rect key="frame" x="0.0" y="449" width="1045" height="34"/>
+                    <view key="contentView" id="Xg7-WT-uDj">
+                        <rect key="frame" x="0.0" y="0.0" width="1045" height="34"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUV-lC-r8G">
+                                <rect key="frame" x="66" y="2" width="60" height="30"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-BP-fje" customClass="HoverButton" customModule="Malvon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-2" width="30" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ENX-z1-ams"/>
+                                            <constraint firstAttribute="width" secondItem="Jdg-BP-fje" secondAttribute="height" multiplier="1:1" id="J91-5I-9DJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="uXR-L3-yJy"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="NSGoBackTemplate" imagePosition="only" alignment="center" controlSize="large" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="2S6-xk-1cQ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="backButton:" target="-2" id="PTc-BZ-bER"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nIJ-8Z-Syk" customClass="HoverButton" customModule="Malvon" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="-2" width="30" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nIJ-8Z-Syk" secondAttribute="height" multiplier="1:1" id="37M-cR-Pou"/>
+                                            <constraint firstAttribute="width" constant="30" id="kuN-wV-YW6"/>
+                                            <constraint firstAttribute="height" constant="30" id="uWk-IA-axO"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="NSGoForwardTemplate" imagePosition="only" alignment="center" controlSize="large" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="sz7-4v-ggx">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="forwardButton:" target="-2" id="tGD-xE-pCF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nIJ-8Z-Syk" firstAttribute="leading" secondItem="Jdg-BP-fje" secondAttribute="trailing" id="0TK-MT-Ujv"/>
+                                    <constraint firstItem="nIJ-8Z-Syk" firstAttribute="top" secondItem="WUV-lC-r8G" secondAttribute="top" id="4lx-NN-p9I"/>
+                                    <constraint firstAttribute="trailing" secondItem="nIJ-8Z-Syk" secondAttribute="trailing" id="RJb-O6-1m7"/>
+                                    <constraint firstItem="nIJ-8Z-Syk" firstAttribute="height" secondItem="Jdg-BP-fje" secondAttribute="height" id="Rjt-2S-GeE"/>
+                                    <constraint firstItem="nIJ-8Z-Syk" firstAttribute="leading" secondItem="Jdg-BP-fje" secondAttribute="trailing" id="aFN-LP-X0T"/>
+                                    <constraint firstItem="nIJ-8Z-Syk" firstAttribute="width" secondItem="Jdg-BP-fje" secondAttribute="width" id="fZL-YA-9XG"/>
+                                    <constraint firstItem="Jdg-BP-fje" firstAttribute="top" secondItem="WUV-lC-r8G" secondAttribute="top" id="l6G-m5-UFI"/>
+                                    <constraint firstAttribute="bottom" secondItem="nIJ-8Z-Syk" secondAttribute="bottom" id="lsG-42-7sk"/>
+                                    <constraint firstAttribute="width" constant="60" id="uj4-DI-CR4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jdg-BP-fje" secondAttribute="bottom" id="v5U-IL-vfT"/>
+                                    <constraint firstItem="Jdg-BP-fje" firstAttribute="leading" secondItem="WUV-lC-r8G" secondAttribute="leading" id="zsu-Dc-rsg"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="-6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="nls-ie-ryh">
+                                <rect key="frame" x="177" y="0.0" width="788" height="34"/>
+                                <subviews>
+                                    <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEv-1d-jkS" customClass="MASearchField" customModule="Malvon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="788" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="vbV-Dj-koP"/>
+                                        </constraints>
+                                        <shadow key="shadow">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </shadow>
+                                        <searchFieldCell key="cell" controlSize="large" lineBreakMode="truncatingTail" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Enter URL" usesSingleLineMode="YES" bezelStyle="round" sendsWholeSearchString="YES" id="C43-1w-dXR">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                        <connections>
+                                            <action selector="searchFieldAction:" target="-2" id="LIX-FB-trt"/>
+                                        </connections>
+                                    </searchField>
+                                    <progressIndicator maxValue="100" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="hRj-KC-y0I">
+                                        <rect key="frame" x="0.0" y="0.0" width="788" height="10"/>
+                                    </progressIndicator>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SBy-me-3uk" customClass="HoverButton" customModule="Malvon" customModuleProvider="target">
+                                <rect key="frame" x="177" y="0.5" width="30.5" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9eU-BH-g53"/>
+                                    <constraint firstAttribute="width" constant="30" id="MdS-qR-LfH"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="NSRefreshTemplate" imagePosition="only" alignment="center" controlSize="large" imageScaling="proportionallyDown" inset="2" id="c5o-dN-mJS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="refreshButton:" target="-2" id="yoo-0O-fm4"/>
+                                </connections>
+                            </button>
+                            <box hidden="YES" horizontalHuggingPriority="249" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="iQp-AF-cVn">
+                                <rect key="frame" x="124" y="0.0" width="5" height="34"/>
+                            </box>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q8L-5E-bWD" customClass="HoverButton" customModule="Malvon" customModuleProvider="target">
+                                <rect key="frame" x="1015" y="0.5" width="30.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8qv-4I-NVk"/>
+                                    <constraint firstAttribute="width" constant="30" id="geD-YR-1H3"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="NSAddTemplate" imagePosition="only" alignment="center" controlSize="large" state="on" imageScaling="proportionallyDown" inset="2" id="oCm-io-N5A">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="createNewTab:" target="-2" id="HFW-D5-AXi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SBy-me-3uk" firstAttribute="top" secondItem="Xg7-WT-uDj" secondAttribute="top" constant="1" id="4FL-oS-inM"/>
+                            <constraint firstItem="nls-ie-ryh" firstAttribute="top" secondItem="Xg7-WT-uDj" secondAttribute="top" id="4Ys-BA-pli"/>
+                            <constraint firstAttribute="bottom" secondItem="iQp-AF-cVn" secondAttribute="bottom" id="6V5-6R-NvQ"/>
+                            <constraint firstAttribute="trailing" secondItem="q8L-5E-bWD" secondAttribute="trailing" id="90f-Yh-kfv"/>
+                            <constraint firstItem="WUV-lC-r8G" firstAttribute="top" secondItem="Xg7-WT-uDj" secondAttribute="top" constant="2" id="FFh-cF-6Zg"/>
+                            <constraint firstItem="SBy-me-3uk" firstAttribute="leading" secondItem="iQp-AF-cVn" secondAttribute="trailing" constant="50" id="RBC-4H-vqW"/>
+                            <constraint firstItem="nls-ie-ryh" firstAttribute="leading" secondItem="iQp-AF-cVn" secondAttribute="trailing" constant="50" id="Tue-7f-1nR"/>
+                            <constraint firstItem="WUV-lC-r8G" firstAttribute="leading" secondItem="Xg7-WT-uDj" secondAttribute="leading" constant="66" id="VaU-rs-rXM"/>
+                            <constraint firstItem="WUV-lC-r8G" firstAttribute="centerY" secondItem="Xg7-WT-uDj" secondAttribute="centerY" id="Yb1-kK-xo3"/>
+                            <constraint firstAttribute="bottom" secondItem="nls-ie-ryh" secondAttribute="bottom" id="dh3-Pa-dHX"/>
+                            <constraint firstAttribute="bottom" secondItem="SBy-me-3uk" secondAttribute="bottom" constant="3" id="gJ6-b4-x48"/>
+                            <constraint firstItem="q8L-5E-bWD" firstAttribute="centerY" secondItem="Xg7-WT-uDj" secondAttribute="centerY" id="kAZ-zD-7oj"/>
+                            <constraint firstItem="q8L-5E-bWD" firstAttribute="leading" secondItem="nls-ie-ryh" secondAttribute="trailing" constant="50" id="l5U-1k-zjY"/>
+                            <constraint firstItem="iQp-AF-cVn" firstAttribute="leading" secondItem="WUV-lC-r8G" secondAttribute="trailing" id="vU8-Wz-15G"/>
+                            <constraint firstItem="iQp-AF-cVn" firstAttribute="top" secondItem="Xg7-WT-uDj" secondAttribute="top" id="wck-RM-g9D"/>
+                        </constraints>
+                    </view>
+                </box>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-XN-cET">
+                    <rect key="frame" x="0.0" y="0.0" width="1045" height="447"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Hmp-yZ-mmV" customClass="MATabView" customModule="Malvon" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="1045" height="447"/>
+                        </customView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ucC-9r-3Ih" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="4yY-ps-Lif"/>
+                <constraint firstItem="ucC-9r-3Ih" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="2" id="K3P-zP-wel"/>
+                <constraint firstItem="gYx-XN-cET" firstAttribute="top" secondItem="ucC-9r-3Ih" secondAttribute="bottom" constant="2" id="Nan-sy-ttn"/>
+                <constraint firstAttribute="bottom" secondItem="gYx-XN-cET" secondAttribute="bottom" id="VZj-CB-Ux7"/>
+                <constraint firstAttribute="trailing" secondItem="gYx-XN-cET" secondAttribute="trailing" id="YcC-PA-aCT"/>
+                <constraint firstItem="gYx-XN-cET" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="n2i-gb-mIO"/>
+                <constraint firstAttribute="trailing" secondItem="ucC-9r-3Ih" secondAttribute="trailing" id="tSs-v8-d1r"/>
+            </constraints>
+            <point key="canvasLocation" x="138.5" y="136"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="14" height="13"/>
+        <image name="NSGoBackTemplate" width="10" height="14"/>
+        <image name="NSGoForwardTemplate" width="10" height="14"/>
+        <image name="NSRefreshTemplate" width="14" height="16"/>
+    </resources>
+</document>
